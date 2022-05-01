@@ -1,0 +1,110 @@
+.app__projects {
+    width: 100%;
+    flex: 1;
+    flex-direction: column;
+}
+
+.app__projects-portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .app__projects-item {
+        width: 425px;
+        flex-direction: column;
+        margin: 4rem 2rem 0;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        background-color: var(--white-color);
+        cursor: pointer;
+        transform: all 0.35s ease;
+
+        &:hover {
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+        }
+
+        @media screen and (min-width: 2000px) {
+            width: 625px;
+            padding: 1.25rem;
+            border-radius: 0.75rem;
+        }
+        @media screen and (max-width: 1200px) {
+            width: 325px;
+        }
+        @media screen and (max-width: 992px) {
+            width: 270px;
+        }
+        @media screen and (max-width: 375px) {
+            width: 100%;
+            margin: 1rem;
+        }
+    }
+}
+
+.app__projects-img {
+    width: 100%;
+    height: 300px;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0.5rem;
+    }
+
+    @media screen and (min-width: 2000px) {
+        height: 440px;
+    }
+    @media screen and (max-width: 1200px) {
+        height: 230px;
+    }
+    @media screen and (max-width: 992px) {
+        height: 190px;
+    }
+}
+
+.app__projects-hover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+    opacity: 0;
+    transition: all 0.35s ease;
+    border-radius: 0.5rem;
+
+    div {
+        width: 50px;
+        height: 50px;
+        margin: 1rem;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: var(--white-color);
+        font-family: var(--font-base);
+        font-weight: 800;
+        cursor: pointer;
+        transition: all 0.35s ease;
+
+        svg {
+            width: 50%;
+            height: 50%;
+        }
+    }
+}
+
+.app__projects-content {
+    width: 100%;
+    padding: 0.5rem;
+    position: relative;
+    flex-direction: column;
+
+    h3 {
+        margin-top: 1rem;
+        line-height: 1.5;
+    }
+}

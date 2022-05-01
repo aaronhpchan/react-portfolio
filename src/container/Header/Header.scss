@@ -1,0 +1,74 @@
+#home {
+    position: relative;
+    background: url(../../assets/bgIMG.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    
+    .app__wrapper {
+        padding: 0;
+
+        .copyright {
+            display: none;
+        }
+    }
+}
+
+.app__header {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+
+    @media screen and (max-width: 576px) {
+        padding: 6rem 1rem 2rem;
+    }
+}
+
+.app__header-name {
+    flex: 0.65;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100px;
+
+    h1 {
+        font-size: 3.5rem;
+        text-align: center;
+        text-transform: uppercase;
+
+        @media screen and (min-width: 2000px) {
+            font-size: 4rem;
+        }
+        @media screen and (max-width: 768px) {
+            font-size: 2.95rem;
+        }
+        @media screen and (max-width: 576px) {
+            font-size: 2.45rem;
+        }
+        @media screen and (max-width: 375px) {
+            font-size: 1.85rem;
+        }
+    }
+}
+
+.app__header-info {
+    flex: 0.65;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 50px;
+
+    p {
+        font-size: 1.35rem;
+        text-align: center;
+        text-transform: capitalize;
+
+        @media screen and (min-width: 2000px) {
+            font-size: 2rem;
+        }
+        @media screen and (max-width: 375px) {
+            font-size: 1.05rem;
+        }
+    }
+}
