@@ -33,18 +33,18 @@
     max-height: 100px;
 
     h1 {
-        font-size: 3.5rem;
+        font: 800 3.5rem var(--font-head);
         text-align: center;
         text-transform: uppercase;
 
         @media screen and (min-width: 2000px) {
-            font-size: 4rem;
+            font-size: 4.75rem;
         }
         @media screen and (max-width: 768px) {
-            font-size: 2.95rem;
+            font-size: 2.75rem;
         }
         @media screen and (max-width: 576px) {
-            font-size: 2.45rem;
+            font-size: 2.1rem;
         }
         @media screen and (max-width: 375px) {
             font-size: 1.85rem;

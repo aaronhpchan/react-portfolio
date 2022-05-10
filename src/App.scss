@@ -48,8 +48,7 @@
 }
 
 .head-text {
-    font-size: 2.75rem;
-    font-weight: 800;
+    font: 800 2.75rem var(--font-head);
     text-align: center;
     color: var(--black-color);
     text-transform: capitalize;
@@ -66,9 +65,14 @@
     @media screen and (min-width: 2000px) {
         font-size: 4rem;
     }
-
-    @media screen and (max-width: 450px) {
-        font-size: 2rem;
+    @media screen and (max-width: 768px) {
+        font-size: 2.45rem;
+    }
+    @media screen and (max-width: 576px) {
+        font-size: 1.85rem;
+    }
+    @media screen and (max-width: 375px) {
+        font-size: 1.7rem;
     }
 }
 
@@ -92,7 +96,6 @@
     @media screen and (min-width: 2000px) {
         font-size: 2rem;
     }
-
     @media screen and (max-width: 450px) {
         font-size: 0.9rem;
     }
