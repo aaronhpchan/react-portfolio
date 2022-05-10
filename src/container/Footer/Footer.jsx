@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import { client } from '../../client';
 import './Footer.scss';
@@ -51,7 +52,15 @@ const Footer = () => {
                             onChange={handleChangeInput}
                         />
                     </div>
-                    <button type='button' className='p-text' onClick={handleSubmit}>{loading ? 'Sending' : 'Send Message'}</button>
+                    <motion.button 
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                        type='button' 
+                        className='p-text' 
+                        onClick={handleSubmit}
+                    >
+                        {loading ? 'Sending' : 'Send Message'}
+                    </motion.button>
                 </div>
                 : <div>
                     <h3 className='head-text'>Thanks for getting in touch!</h3>

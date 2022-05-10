@@ -5,9 +5,8 @@
   --primary-color: #ffffd4;
   --secondary-color: #5555ff;
   --black-color: #030303;
-  --lightGray-color: #e4e4e4;
+  --light-gray-color: #e4e4e4;
   --gray-color: #4a515d;
-  --brown-color: #46364a;
   --white-color: #ffffff;
 }
 
@@ -17,3 +16,4 @@
   margin: 0;
   scroll-behavior: smooth;
 }
+

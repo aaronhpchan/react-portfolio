@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { HiMenuAlt4, HiX } from 'react-icons/hi';
+import { HiMenuAlt3, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 import './Navbar.scss';
 
@@ -9,7 +9,7 @@ const Navbar = () => {
     return (
         <nav className='app__navbar'>
             <div className='app__navbar-logo'>
-                <h2 className='head-text'><span>Aa</span>ron</h2>
+                <h2 className='head-text'><a href='#home'><span>Aa</span>ron</a></h2>
             </div>
             <ul className='app__navbar-links'>
                 {['home', 'about', 'skills', 'projects', 'contact'].map(item => (
@@ -20,7 +20,7 @@ const Navbar = () => {
                 ))}
             </ul>
             <div className='app__navbar-menu'>
-                <HiMenuAlt4 onClick={() => setToggle(true)}/> 
+                <HiMenuAlt3 onClick={() => setToggle(true)} /> 
                 {toggle && (
                     <motion.div
                         whileInView={{ x: [300, 0]}}
