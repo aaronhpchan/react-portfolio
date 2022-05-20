@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { AppWrap, MotionWrap } from '../../wrapper';
+import { FooterWrap, MotionWrap } from '../../wrapper';
 import { client } from '../../client';
 import './Footer.scss';
 
@@ -70,4 +70,4 @@ const Footer = () => {
     );
 }
 
-export default AppWrap(MotionWrap(Footer, 'app__footer'), 'contact');
+export default FooterWrap(MotionWrap(Footer, 'app__footer'), 'contact');

@@ -4,13 +4,9 @@
     background-size: cover;
     background-repeat: repeat;
     background-position: center;
-    
-    .app__wrapper {
-        padding: 0;
 
-        .copyright {
-            display: none;
-        }
+    @media screen and (max-width: 454px) {
+        background-position: right;
     }
 }
 
@@ -43,8 +39,11 @@
         @media screen and (max-width: 768px) {
             font-size: 2.75rem;
         }
+        @media screen and (max-width: 630px) {
+            font-size: 2.35rem;
+        }
         @media screen and (max-width: 576px) {
-            font-size: 2.1rem;
+            font-size: 1.9rem;
         }
         @media screen and (max-width: 375px) {
             font-size: 1.85rem;
