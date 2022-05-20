@@ -24,15 +24,16 @@ const Projects = () => {
             <h2 className='head-text'>Here are some of my <span>projects</span></h2>
             <div className='app__projects-portfolio'>
                 {projects.map((project, index) => (
-                    <div className='app__projects-item app__flex' key={index}>
-                        <div 
-                            onClick={() => {
-                                setOpened(true);
-                                setModalData(project);
-                                }
+                    <div 
+                        className='app__projects-item app__flex' 
+                        key={index} 
+                        onClick={() => {
+                            setOpened(true);
+                            setModalData(project);
                             }
-                            className='app__projects-img app__flex'
-                        >
+                        }
+                    >
+                        <div className='app__projects-img app__flex'>
                             <img src={urlFor(project.imgUrl)} alt={project.title} />
                             <motion.div
                                 whileHover={{ opacity: [0, 1] }}

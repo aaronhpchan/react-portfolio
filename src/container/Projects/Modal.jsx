@@ -9,28 +9,25 @@ const overlayStyle = {
     position: 'fixed',
     top: 0,
     left: 0,
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
     backgroundColor: 'rgba(0, 0, 0, 0.3)'
 };
 const modalStyle = {
-    width: 'min(730px, 75%)',
-    maxHeight: '100%',
+    width: 'min(670px, 75%)',
+    maxHeight: 'min(100%, 99vh)',
     overflow: 'auto',
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     alignItems: 'center',
     position: 'fixed',
     top: '50%',
     left: '50%',
-    padding: '1.5rem 1rem',
+    padding: '1rem',
     zIndex: '1000',
     transform: 'translate(-50%, -50%)',
     backgroundColor: 'var(--white-color)',
     fontFamily: 'var(--font-base)',
-    borderRadius: '0.5rem',
+    borderRadius: '0.175rem'
 };
 const hiXStyle = {
     position: 'absolute',
@@ -56,8 +53,8 @@ export default function Modal({ open, children, onClose }) {
             <div style={modalStyle} onClick={e => e.stopPropagation()}>              
                 {children}
                 <HiX onClick={onClose} style={hiXStyle} />                             
-            </div>
+            </div>            
         </>,
         document.getElementById('portal')
-    )
-}
+    );
+};
