@@ -20,6 +20,14 @@ const Header = () => {
             >
                 <p>A web developer based in Toronto</p>
             </motion.div>
+            <a href='#projects' className='app__header-btn'>
+                <motion.button
+                    whileInView={{ opacity: [-2, 1] }}
+                    whileHover={{ scale: 1.1 }}
+                >
+                    Projects 
+                </motion.button>
+            </a>
         </div>
     );
 };

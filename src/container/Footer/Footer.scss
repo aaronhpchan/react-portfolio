@@ -32,6 +32,11 @@
             height: 170px;
         }
 
+        ::placeholder { 
+            color: var(--gray-color);
+            opacity: 1; 
+        }
+
         &:hover {
             box-shadow: 0 0 25px var(--light-gray-color);
         }

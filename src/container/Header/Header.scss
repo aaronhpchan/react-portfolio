@@ -71,3 +71,20 @@
         }
     }
 }
+
+.app__header-btn {
+    position: absolute;
+    bottom: 15%;
+
+    button {
+        text-transform: uppercase;
+        padding: 1.25rem 2.75rem;
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
+
+    @media screen and (max-width: 500px) {
+        bottom: 12.5%;
+        padding: 1rem 2rem;
+    }
+}
