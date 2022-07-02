@@ -57,6 +57,7 @@
     justify-content: center;
     align-items: center;
     max-height: 50px;
+    margin-bottom: 5%;
 
     p {
         font-size: 1.35rem;
@@ -73,9 +74,6 @@
 }
 
 .app__header-btn {
-    position: absolute;
-    bottom: 15%;
-
     button {
         text-transform: uppercase;
         padding: 1.25rem 2.75rem;
@@ -84,7 +82,6 @@
     }
 
     @media screen and (max-width: 500px) {
-        bottom: 12.5%;
         padding: 1rem 2rem;
     }
 }
